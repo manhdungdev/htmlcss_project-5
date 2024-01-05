@@ -68,6 +68,32 @@ textarea {
     line-height: 1.75;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
+.description {
+    color: #696D77;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.desc {
+    color: #696D76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66667;
+}
+
+.heading {
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16667;
+}
+
+
+
 /* Header*/
 
 .header {
@@ -75,10 +101,10 @@ textarea {
     background: #fff7f2;
 }
 
-.header--sticky{
+.header--sticky {
     position: sticky;
     top: -26px;
-    z-index: 1;
+    z-index: 999;
 }
 
 .header__body {
@@ -137,5 +163,356 @@ textarea {
     display: flex;
     align-items: center;
     margin-left: auto;
-    width: 300px;
+}
+
+.header__sign-up {
+    height: 52px;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 0 80px;
+}
+
+.hero__body {
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 46%;
+}
+
+.hero__title {
+    display: flex;
+    align-items: center;
+}
+
+.hero__title::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    margin-right: 12px;
+    background: #696D77;
+}
+
+.hero__heading {
+    margin-top: 12px;
+}
+
+.hero__heading-decor {
+    color: #7264D6;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.166667;
+}
+
+.hero__desc {
+    margin-top: 20px;
+}
+
+.hero-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+    margin-top: 40px;
+    border-radius: 8px;
+    padding: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.hero-form__input::placeholder {
+    color: #696D76;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero-form__btn {
+    flex-shrink: 0;
+    background: #7264D6;
+}
+
+.hero__note {
+    margin-top: 20px;
+    color: #696D76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7143;
+}
+
+/* Hero media */
+.hero__media {
+    position: relative;
+    flex: 1;
+    margin-left: 160px;
+}
+
+/* Hero deposit */
+.hero-deposit {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    width: 174px;
+    height: 46px;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    z-index: 1;
+}
+
+.hero-deposit__desc {
+    margin-left: 8px;
+    color: #31456A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-deposit__price {
+    margin-left: auto;
+    color: #4AB5E3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Hero interest */
+.hero-interest {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #DA6464;
+}
+
+.hero-interest__value {
+    color: #FFF;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__desc {
+    color: #FFF;
+    font-weight: 400;
+}
+
+/* Hero fund */
+.hero-fund {
+    position: absolute;
+    bottom: 66px;
+    right: 103px;
+    display: flex;
+    align-items: center;
+    width: 124px;
+    height: 68px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439F90;
+    z-index: 1;
+}
+
+.hero-fund__content {
+    margin-left: 11px;
+}
+
+.hero-fund__price {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-fund__title {
+    margin-top: 5px;
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Hero phone */
+.hero-phone {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    padding: 52px 23px 42px;
+    background: url(../icon/hero-phone.svg);
+}
+
+.hero-phone::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    content: "";
+    height: 36px;
+    width: 144px;
+    border-radius: 0px 0px 18px 18px;
+    background: #3C2F60;
+}
+
+.hero-card {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 16px;
+    background: linear-gradient(90deg, #8273f7 40%, #8270ff 56%);
+    overflow: hidden;
+}
+
+.hero-card__header {
+    display: flex;
+    align-items: center;
+}
+
+.hero-card__title {
+    position: relative;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.hero-card__ball {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FEEF65;
+}
+
+.hero-card__ball--red {
+    margin-left: auto;
+    background: #FE6565;
+}
+
+.hero-card__ball:nth-of-type(2) {
+    margin-left: -9px;
+}
+
+.hero-card__value {
+    margin-top: 2px;
+    color: #FFF;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.hero-card__infor {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px;
+    margin-top: 38px;
+    z-index: 1;
+}
+
+.hero-card__item {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hero-card__item:nth-child(3),
+.hero-card__item:nth-child(4) {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hero-card__decor--top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-card__decor--bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-transection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.hero-transection__title {
+    color: #31456A;
+    font-weight: 600;
+}
+
+.hero-item {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.hero-data__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(74, 181, 227, 0.1);
+}
+
+.hero-data__content {
+    margin-left: 14px;
+}
+
+.hero-data__heading {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-data__text {
+    margin-top: 6px;
+    color: #696D76;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-data__money {
+    margin-left: auto;
+    text-align: right;
+}
+
+.hero-data__number {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-data__date {
+    margin-top: 6px;
+    color: #696D76;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
 }
