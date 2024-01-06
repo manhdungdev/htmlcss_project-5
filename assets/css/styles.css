@@ -753,8 +753,10 @@ textarea {
 }
 
 .payment-card__value {
+    position: relative;
     margin-top: 10px;
     font-size: 3.2rem;
+    z-index: 1;
 }
 
 .payment-card__infor {
@@ -869,4 +871,80 @@ textarea {
     color: #FFF;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* Payment 2 */
+.payment-2__media {
+    position: relative;
+    width: 49%;
+    height: 600px;
+    margin-right: auto;
+}
+
+.payment-2__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 470px;
+    background: url(../icon/payment-2-background.svg) no-repeat left bottom;
+}
+
+.payment-2__img {
+    width: calc(100% - 56px);
+    object-fit: cover;
+}
+
+.payment-2__method {
+    position: absolute;
+    bottom: 57px;
+    right: 0px;
+    width: 281px;
+    height: 220px;
+    padding: 28px;
+    background: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.10));
+}
+
+.payment-2__heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66667;
+}
+
+.payment-2__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.payment-2__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #F2F2FA;
+}
+
+.payment-2__item:last-child {
+    background: #F9EA63;
+}
+
+.payment-2__decor {
+    position: absolute;
+    top: -60px;
+    right: -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264D6;
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.10);
 }
