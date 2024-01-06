@@ -948,3 +948,114 @@ textarea {
     background: #7264D6;
     box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.10);
 }
+
+/* Client */
+.client__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.client__heading {
+    margin-top: 12px;
+}
+
+.client__desc {
+    width: 435px;
+    margin-top: 18px;
+}
+
+.client__content {
+    margin-top: 70px;
+}
+
+.client__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.client-item__desc {
+    position: relative;
+    border-radius: 8px;
+    padding: 42px 28px;
+    background: #fff;
+    color: #696D76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54545;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.client-item__desc::before {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    translate: -50% 0;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 60px 50px 0 50px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.client-item__avatar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    margin: 96px auto 20px;
+    border-radius: 50%;
+    background: #4AB5E3;
+    overflow: hidden;
+}
+
+.client-item__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.client-item__name {
+    color: #070052;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.3846;
+}
+
+.client-item__job {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.client__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 38px;
+}
+
+.client__dot {
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9B9FAB;
+}
+
+.client__dot:not(.client__dot--active) {
+    cursor: pointer;
+}
+
+.client__dot--active {
+    background: #7264D6;
+    border-color: #7264D6;
+}
