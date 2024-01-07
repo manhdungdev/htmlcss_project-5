@@ -994,10 +994,16 @@ textarea {
     font-style: italic;
     font-weight: 400;
     line-height: 1.54545;
+    transition: border-color 0.5s;
 }
 
-.client-item__desc:hover{
+.client-item__desc:hover {
     filter: drop-shadow(0px 11px 22px rgba(0, 0, 0, 0.07));
+    border-color: transparent;
+}
+
+.client-item__desc:hover::before {
+    bottom: -60px;
 }
 
 .client-item__desc::before,
@@ -1011,6 +1017,7 @@ textarea {
     border-width: 61px 51px 0 51px;
     border-style: solid;
     border-color: #fff transparent transparent transparent;
+    transition: bottom 0.25s;
 }
 
 .client-item__desc::before {
@@ -1117,6 +1124,11 @@ textarea {
     background: #FFF;
 }
 
+.blog-item:hover {
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+    border-color: transparent;
+}
+
 .blog-item__wrap {
     flex-shrink: 0;
     display: inline-block;
@@ -1126,7 +1138,7 @@ textarea {
     overflow: hidden;
 }
 
-.blog-item__img{
+.blog-item__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
