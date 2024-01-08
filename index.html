@@ -33,13 +33,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header header--sticky">
+    <header class="header header--sticky" data-aos="animate__flipInX" data-aos-once="true">
         <div class="container">
             <div class="header__body">
                 <a href="#">
@@ -48,16 +52,16 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item nav__item--active">
-                            <a href="#!" class="nav__link" title="Home">Home</a>
+                            <a href="#" class="nav__link" title="Home">Home</a>
                         </li>
                         <li class="nav__item ">
-                            <a href="#!" class="nav__link" title="Products">Products</a>
+                            <a href="#product" class="nav__link" title="Products">Products</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link" title="Features">Features</a>
+                            <a href="#feature" class="nav__link" title="Features">Features</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link" title="Blog">Blog</a>
+                            <a href="#blog" class="nav__link" title="Blog">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -75,13 +79,15 @@
         <div class="container">
             <div class="hero__body">
                 <div class="hero__content">
-                    <p class="hero__title description">Digital Smart Wallet</p>
-                    <h1 class="heading hero__heading">Digital <span class="hero__heading-decor">Payment</span> For
+                    <p class="hero__title description" data-aos="animate__slideInUp">Digital Smart Wallet</p>
+                    <h1 class="heading hero__heading" data-aos="animate__slideInUp">Digital <span
+                            class="hero__heading-decor">Payment</span> For
                         Everyone.</h1>
-                    <p class="desc hero__desc">We bring together eveything that’s required to build websites and apps
+                    <p class="desc hero__desc" data-aos="animate__slideInUp">We bring together eveything that’s required
+                        to build websites and apps
                         that accept payments and send payouts globally. We are the best platform.
                     </p>
-                    <form action="" class="hero-form">
+                    <form action="" class="hero-form" data-aos="animate__slideInUp">
                         <input type="footer-email" class="hero-form__input" placeholder="Your email address" required>
                         <button type="submit" class="btn hero-form__btn">Get Started</button>
                     </form>
@@ -89,7 +95,7 @@
                     <p class="hero__note">*We’ll respect the inbox and never share your email.</p>
 
                 </div>
-                <div class="hero__media">
+                <div class="hero__media" data-aos="animate__slideInRight">
                     <div class="hero-deposit">
                         <img src="assets/icon/hero-deposit.svg" alt="Hero-deposit" class="img hero-deposit__img">
                         <p class="hero-deposit__desc">Deposite</p>
@@ -202,17 +208,17 @@
 
     <main class="main">
         <!-- Work -->
-        <section class="work">
+        <section id="product" class="work">
             <div class="container">
                 <div class="work__body">
-                    <div class="work__media">
+                    <div class="work__media" data-aos="animate__slideInLeft">
                         <div class="work-decor">
                             <div class="work-decor_-wrap">
                                 <img src="assets/img/logo.png" alt="Work decoration" class="work-decor__icon">
                             </div>
                         </div>
 
-                        <img src="assets/img/work-img.png" alt="Work thumb" class="work__img">
+                        <img loading="lazy" src="assets/img/work-img.png" alt="Work thumb" class="work__img">
 
                         <div class="work-congrat">
                             <div class="work-congrat__wrap">
@@ -229,17 +235,17 @@
                     </div>
 
                     <div class="work__content">
-                        <p class="description">Digital Smart Wallet</p>
-                        <p class="work__heading heading">How It Works</p>
+                        <p class="description" data-aos="animate__slideInDown">Digital Smart Wallet</p>
+                        <p class="work__heading heading" data-aos="animate__slideInDown">How It Works</p>
                         <ul class="work__list">
-                            <li class="work-item">
+                            <li class="work-item" data-aos="animate__fadeIn">
                                 <h3 class="work-item__heading">Open a High Interest Checking account</h3>
                                 <p class="work-item__desc">
                                     Fund your bank account with a minimum balance of $100. Enroll
                                     in 3 minutes or less!
                                 </p>
                             </li>
-                            <li class="work-item">
+                            <li class="work-item" data-aos="animate__fadeIn">
                                 <h3 class="work-item__heading">
                                     10 point-of-sale transactions each Month that are at
                                     least $10 each.
@@ -249,7 +255,7 @@
                                     possible in order to accue APYI
                                 </p>
                             </li>
-                            <li class="work-item">
+                            <li class="work-item" data-aos="animate__fadeIn">
                                 <h3 class="work-item__heading">Receive up to 5.50% APY</h3>
                                 <p class="work-item__desc">The APY you earn will be based on your account balance and
                                     satisfying the transaction requirement.</p>
@@ -264,7 +270,7 @@
         <section class="payment">
             <div class="container">
                 <div class="payment__body">
-                    <section class="payment__content">
+                    <section class="payment__content" data-aos="animate__slideInRight">
                         <p class="description">Digital Smart Wallet</p>
                         <h2 class="heading payment__heading">One Card For All Your Payments</h2>
                         <p class="desc payment__desc">
@@ -286,7 +292,7 @@
 
                         <button class="btn payment__btn">Get Started</button>
                     </section>
-                    <div class="payment__media">
+                    <div class="payment__media" data-aos="animate__slideInLeft">
                         <div class="card payment-card">
                             <img src="assets/icon/payment-card-decor-1.svg" alt="card-decor-1"
                                 class="card__decor--top payment-card__decor--top">
@@ -335,12 +341,13 @@
         </section>
 
         <!-- Payment 2-->
-        <section class="payment payment-2">
+        <section id="feature" class="payment payment-2">
             <div class="container">
                 <div class="payment__body">
-                    <div class="payment-2__media">
+                    <div class="payment-2__media" data-aos="animate__slideInLeft">
                         <div class="payment-2__wrap">
-                            <img src="assets/img/payment-2-thumb.png" alt="Payment thumb" class="payment-2__img">
+                            <img loading="lazy" src="assets/img/payment-2-thumb.png" alt="Payment thumb"
+                                class="payment-2__img">
                         </div>
 
                         <div class="payment-2__method">
@@ -379,7 +386,7 @@
                         </div>
                     </div>
 
-                    <section class="payment__content">
+                    <section class="payment__content" data-aos="animate__slideInRight">
                         <p class="description">Digital Smart Wallet</p>
                         <h2 class="heading payment__heading">Transfer and Deposite Your Money Anytime</h2>
                         <p class="desc payment__desc">
@@ -422,7 +429,7 @@
                         <div class="client__list">
                             <!-- Client 1 -->
                             <div class="client-item">
-                                <blockquote class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -436,7 +443,7 @@
 
                             <!-- Client 2 -->
                             <div class="client-item">
-                                <blockquote class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -450,7 +457,7 @@
 
                             <!-- Client 3 -->
                             <div class="client-item">
-                                <blockquote class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -464,7 +471,7 @@
 
                             <!-- Client 4 -->
                             <div class="client-item">
-                                <blockquote class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -478,7 +485,7 @@
 
                             <!-- Client 5 -->
                             <div class="client-item">
-                                <blockquote class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -492,7 +499,7 @@
 
                             <!-- Client 6 -->
                             <div class="client-item">
-                                <blockquote class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -516,7 +523,7 @@
         </section>
 
         <!-- Blog -->
-        <section class="blog">
+        <section id="blog" class="blog">
             <div class="container">
                 <div class="blog__body">
                     <header class="blog-header">
@@ -533,9 +540,10 @@
                     </header>
 
                     <div class="blog__list">
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="animate__zoomIn">
                             <a href="#!" class="blog-item__wrap">
-                                <img src="assets/img/blog-1.jpg" alt="Blog thumb 1" class="blog-item__img">
+                                <img loading="lazy" src="assets/img/blog-1.jpg" alt="Blog thumb 1"
+                                    class="blog-item__img">
                             </a>
                             <div class="blog-item__content">
                                 <time class="blog-item__time">July 03, 2022</time>
@@ -548,9 +556,10 @@
                                 <a href="#!" class="blog-item__link">Read Blog</a>
                             </div>
                         </article>
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="animate__zoomIn">
                             <a href="#!" class="blog-item__wrap">
-                                <img src="assets/img/blog-2.jpg" alt="Blog thumb 2" class="blog-item__img">
+                                <img loading="lazy" src="assets/img/blog-2.jpg" alt="Blog thumb 2"
+                                    class="blog-item__img">
                             </a>
                             <div class="blog-item__content">
                                 <time class="blog-item__time">July 03, 2022</time>
@@ -560,9 +569,10 @@
                                 <a href="#!" class="blog-item__link">Read Blog</a>
                             </div>
                         </article>
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="animate__zoomIn">
                             <a href="#!" class="blog-item__wrap">
-                                <img src="assets/img/blog-3.jpg" alt="Blog thumb 3" class="blog-item__img">
+                                <img loading="lazy" src="assets/img/blog-3.jpg" alt="Blog thumb 3"
+                                    class="blog-item__img">
                             </a>
                             <div class="blog-item__content">
                                 <time class="blog-item__time">July 03, 2022</time>
@@ -572,9 +582,10 @@
                                 <a href="#!" class="blog-item__link">Read Blog</a>
                             </div>
                         </article>
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="animate__zoomIn">
                             <a href="#!" class="blog-item__wrap">
-                                <img src="assets/img/blog-4.jpg" alt="Blog thumb 4" class="blog-item__img">
+                                <img loading="lazy" src="assets/img/blog-4.jpg" alt="Blog thumb 4"
+                                    class="blog-item__img">
                             </a>
                             <div class="blog-item__content">
                                 <time class="blog-item__time">July 03, 2022</time>
@@ -607,6 +618,12 @@
                             </a>
                         </div>
                     </section>
+                    <div class="app__decors">
+                        <img src="assets/icon/app-decor.svg" alt="App decoration" class="app__decor">
+                        <img src="assets/icon/app-decor.svg" alt="App decoration" class="app__decor">
+                        <img src="assets/icon/app-decor.svg" alt="App decoration" class="app__decor">
+                        <img src="assets/icon/app-decor.svg" alt="App decoration" class="app__decor">
+                    </div>
                 </div>
             </div>
         </section>
@@ -616,7 +633,7 @@
         <div class="container">
             <div class="footer__body">
                 <div class="footer__content">
-                    <a href="#!">
+                    <a href="#">
                         <img src="assets/icon/logo.svg" alt="Footer logo" class="footer__logo">
                     </a>
                     <section class="footer-contact">
@@ -684,6 +701,14 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            initClassName: null,
+            animatedClassName: 'animate__animated',
+            useClassNames: true
+        });
+    </script>
 </body>
 
 </html>

@@ -12,6 +12,37 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Animation */
+[data-aos] {
+    visibility: hidden;
+}
+
+[data-aos].animate__animated {
+    visibility: visible;
+}
+
+
+@keyframes hero-run {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes app-rotate {
+    from{
+        rotate: 0;
+    } to{
+        rotate: 360deg;
+    }
+    
 }
 
 /* Common */
@@ -248,6 +279,10 @@ textarea {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.7143;
+    visibility: hidden;
+    animation: hero-run 0.3s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
 }
 
 /* Hero media */
@@ -532,6 +567,7 @@ textarea {
 /* Work */
 .work {
     padding: 80px 0;
+    scroll-margin-top: 30px;
 }
 
 .work__body {
@@ -873,6 +909,11 @@ textarea {
 }
 
 /* Payment 2 */
+
+.payment-2 {
+    scroll-margin-top: 50px;
+}
+
 .payment-2__media {
     position: relative;
     width: 49%;
@@ -1082,6 +1123,7 @@ textarea {
 
 .blog {
     padding: 80px;
+    scroll-margin-top: 40px;
 }
 
 .blog-header {
@@ -1177,6 +1219,7 @@ textarea {
 }
 
 .app__body {
+    position: relative;
     border-radius: 24px;
     padding: 100px 0;
     background: #7264D6;
@@ -1224,6 +1267,31 @@ textarea {
     background: #fff;
 }
 
+.app__decor{
+    position: absolute;
+    animation: app-rotate ease-in-out 3.25s infinite alternate;
+}
+
+.app__decor:nth-child(1){
+    top: 49px;
+    left: 112px;
+}
+
+.app__decor:nth-child(2){
+    top: 49px;
+    right: 112px;
+}
+
+.app__decor:nth-child(3){
+    bottom: 49px;
+    left: 166px;
+}
+
+.app__decor:nth-child(4){
+    bottom: 49px;
+    right: 166px;
+}
+
 /* Footer */
 
 .footer {
@@ -1232,7 +1300,7 @@ textarea {
 
 .footer__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 4fr;
+    grid-template-columns: auto 1fr 1fr 4fr;
     column-gap: 163px;
 }
 
@@ -1251,6 +1319,11 @@ textarea {
 .footer-contact__link {
     color: rgb(106 110 120 / 70%);
     font-weight: 400;
+}
+
+.footer-contact__link:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;;
 }
 
 .footer-contact__item+.footer-contact__item {
