@@ -306,6 +306,7 @@ textarea {
     background: #FFF;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
     z-index: 1;
+    animation-delay: 1.5s;
 }
 
 .hero-deposit__desc {
@@ -337,6 +338,7 @@ textarea {
     height: 130px;
     border-radius: 50%;
     background: #DA6464;
+    animation-delay: 0.5s;
 }
 
 .hero-interest__value {
@@ -363,6 +365,7 @@ textarea {
     border-radius: 10px;
     background: #439F90;
     z-index: 1;
+    animation-delay: 1s;
 }
 
 .hero-fund__content {

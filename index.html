@@ -35,6 +35,7 @@
 
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -96,18 +97,18 @@
 
                 </div>
                 <div class="hero__media" data-aos="animate__slideInRight">
-                    <div class="hero-deposit">
+                    <div class="hero-deposit" data-aos="animate__backInDown">
                         <img src="assets/icon/hero-deposit.svg" alt="Hero-deposit" class="img hero-deposit__img">
                         <p class="hero-deposit__desc">Deposite</p>
                         <span class="hero-deposit__price">$32000</span>
                     </div>
 
-                    <div class="hero-interest">
+                    <div class="hero-interest" data-aos="animate__backInRight">
                         <span class="hero-interest__value">0%</span>
                         <p class="hero-interest__desc">Interest</p>
                     </div>
 
-                    <div class="hero-fund">
+                    <div class="hero-fund" data-aos="animate__backInUp">
                         <img src="assets/icon/hero-fund.svg" alt="Hero-fund" class="hero-fund__img">
                         <div class="hero-fund__content">
                             <p class="hero-fund__price">$1.310</p>
@@ -212,7 +213,7 @@
             <div class="container">
                 <div class="work__body">
                     <div class="work__media" data-aos="animate__slideInLeft">
-                        <div class="work-decor">
+                        <div class="work-decor" data-aos="flip-right">
                             <div class="work-decor_-wrap">
                                 <img src="assets/img/logo.png" alt="Work decoration" class="work-decor__icon">
                             </div>
@@ -220,7 +221,7 @@
 
                         <img loading="lazy" src="assets/img/work-img.png" alt="Work thumb" class="work__img">
 
-                        <div class="work-congrat">
+                        <div class="work-congrat" data-aos="animate__heartBeat">
                             <div class="work-congrat__wrap">
                                 <span class="work-congrat__circle">
                                     <img src="assets/icon/work-icon.svg" alt="Work congratulation icon"
@@ -429,7 +430,8 @@
                         <div class="client__list">
                             <!-- Client 1 -->
                             <div class="client-item">
-                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for
+                                    online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -443,7 +445,8 @@
 
                             <!-- Client 2 -->
                             <div class="client-item">
-                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for
+                                    online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -457,7 +460,8 @@
 
                             <!-- Client 3 -->
                             <div class="client-item">
-                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for
+                                    online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -471,7 +475,8 @@
 
                             <!-- Client 4 -->
                             <div class="client-item">
-                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for
+                                    online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -485,7 +490,8 @@
 
                             <!-- Client 5 -->
                             <div class="client-item">
-                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for
+                                    online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -499,7 +505,8 @@
 
                             <!-- Client 6 -->
                             <div class="client-item">
-                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for online banking. The best
+                                <blockquote data-aos="animate__fadeIn" class="client-item__desc">Fantastic platform for
+                                    online banking. The best
                                     online banking platform I have used. Payments, loans, and money transfers have never
                                     been so much easier before. I am very much happy about this great online bank.
                                 </blockquote>
@@ -704,7 +711,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            initClassName: null,
+            initClassName: false,
             animatedClassName: 'animate__animated',
             useClassNames: true
         });
