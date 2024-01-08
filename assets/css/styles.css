@@ -1413,3 +1413,29 @@ textarea {
     font-weight: 400;
     line-height: 1.75;
 }
+
+.chat {
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    font-size: 16px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 3px #333);
+    /*   box-shadow: 0 0 3px #333; */
+    background: #fff;
+    border-radius: 6px;
+  }
+  
+  .chat::after {
+    position: absolute;
+    bottom: -100px;
+    right: 50px;
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: red;
+    rotate: 52deg;
+    transform: skew(15deg);
+  }
+  
